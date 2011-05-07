@@ -1,0 +1,10 @@
+Test real world use cases, which will likely find design weaknesses.
+
+Consider implementing other kinds of pipes (e.g. client/server).
+
+Consider making this class Reflexive. What would I have to gain? Most likely
+adding more advanced pipes will increase the need for event passing.
+
+Determine how this pattern can be used with Reflexive::Workerpool. I should
+just be able to create an object that extends Pipeline and consumes
+Reflexive::WorkerPool::Role::Job then send that object to the workerpool.
